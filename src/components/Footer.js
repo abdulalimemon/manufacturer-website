@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
     const today = new Date();
@@ -14,7 +17,15 @@ const Footer = () => {
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">
-                    
+                    <Link className='text-white'>
+                        <BsFacebook className='w-6 h-6'></BsFacebook>
+                    </Link>
+                    <Link className='text-white'>
+                        <BsInstagram className='w-6 h-6'></BsInstagram>
+                    </Link>
+                    <Link className='text-white'>
+                        <BsTwitter className='w-6 h-6'></BsTwitter>
+                    </Link>
                 </div>
             </div>
             <div>
