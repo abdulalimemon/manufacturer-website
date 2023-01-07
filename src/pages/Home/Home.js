@@ -3,10 +3,11 @@ import HomeBanner from './HomeBanner';
 
 const Home = () => {
     return (
-        <>
-            <h2>Home</h2>
-            <HomeBanner></HomeBanner>
-        </>
+        <div className='bg-[#FDF7FF]'>
+            <div className='container mx-auto'>
+                <HomeBanner></HomeBanner>
+            </div>
+        </div>
     );
 };
 
