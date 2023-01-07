@@ -1,9 +1,12 @@
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import PageRoute from './PageRoute';
 
 function App() {
   return (
     <>
-      <h1>hello</h1>
+      <Navbar></Navbar>
+      <PageRoute></PageRoute>
     </>
   );
 }
