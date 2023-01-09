@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Tools = () => {
     return (
         <section>
-            <div class="container px-5 py-24 mx-auto">
+            <div class="container px-5 py-10 lg:py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-8 lg:mb-16">
                     <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl mb-4 lg:mb-8">Our Tools</h2>
                 </div>
