@@ -18,7 +18,7 @@ const Subscribe = () => {
                                 name="email"
                                 id="email"
                                 placeholder="Enter email to get started"
-                                class="block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-md caret-indigo-600 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600"
+                                class="input input-bordered w-full mb-4 md:mb-0"
                                 required
                             />
                         </div>
