@@ -16,25 +16,25 @@ const BusinessSummery = () => {
                 <div className="flex flex-wrap -m-4 text-center">
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
                         <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
-                            <SiAngellist className='w-16 h-16 mb-3 inline-block'></SiAngellist>
+                            <SiAngellist className='w-16 h-16 mb-3 inline-block text-[#4506CB]'></SiAngellist>
                             <h2 className="title-font font-medium text-3xl text-gray-900">5 Years Experience</h2>
                         </div>
                     </div>
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
                         <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
-                            <FaUsersCog className='w-16 h-16 mb-3 inline-block'></FaUsersCog>
+                            <FaUsersCog className='w-16 h-16 mb-3 inline-block text-[#4506CB]'></FaUsersCog>
                             <h2 className="title-font font-medium text-3xl text-gray-900">Best Team Member</h2>
                         </div>
                     </div>
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
                         <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
-                            <GrServices className='w-16 h-16 mb-3 inline-block'></GrServices>
+                            <GrServices className='w-16 h-16 mb-3 inline-block text-[#4506CB]'></GrServices>
                             <h2 className="title-font font-medium text-3xl text-gray-900">The Best Services</h2>
                         </div>
                     </div>
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
                         <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
-                            <GrTechnology className='w-16 h-16 mb-3 inline-block'></GrTechnology>
+                            <GrTechnology className='w-16 h-16 mb-3 inline-block text-[#4506CB]'></GrTechnology>
                             <h2 className="title-font font-medium text-3xl text-gray-900">Unique Technology</h2>
                         </div>
                     </div>
