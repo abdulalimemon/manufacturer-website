@@ -19,7 +19,7 @@ const HomeBanner = () => {
                     </div>
                 </div>
 
-                <div className="relative mt-12 -mb-4 sm:-mb-10 lg:-mb-12 sm:mt-16 lg:mt-24">
+                <div className="relative mt-12 -mb-4 sm:-mb-10 lg:pb-10 lg:-mb-12 sm:mt-16 lg:mt-24">
                     <div className="absolute top-0 transform -translate-x-1/2 left-1/2">
                     </div>
 
