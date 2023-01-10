@@ -1,29 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { FaUserAlt } from "react-icons/fa";
 import { BiAt } from "react-icons/bi";
 import { IoIosFingerPrint } from "react-icons/io";
 import { useForm } from 'react-hook-form';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { toast } from 'react-toastify';
+import Loading from '../../components/Loading/Loading';
 
 const Register = () => {
     const [
         createUserWithEmailAndPassword, user, loading, error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, uError] = useUpdateProfile(auth);
+    const navigate = useNavigate();
+    const location = useLocation();
     const { register, handleSubmit, formState: { errors } } = useForm();
-
+    const from = location.state?.from?.pathname || "/";
+    
     const onSubmit = async (data) => {
         await createUserWithEmailAndPassword(data.email, data.password);
-
+        await updateProfile({ displayName: data.name });
 
         await toast.success('An user verification email has been sent to your email address. Please check your inbox or spam folder.', {
             theme: "colored",
         });
     }
 
+    if (user) {
+        console.log(user);
+        navigate(from, { replace: true });
+    }
+
+    if (loading || updating) {
+        return <Loading></Loading>;
+    }
+
+    if (error || uError) {
+        toast.error(`Something went wrong. you got this error '${error?.message}'`, {
+            theme: "colored",
+        });
+    }
 
     return (
         <section className="container mx-auto">
