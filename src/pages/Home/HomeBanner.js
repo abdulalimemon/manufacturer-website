@@ -9,7 +9,7 @@ const HomeBanner = () => {
                     <p className="text-sm font-normal tracking-widest uppercase">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500"> Your startup needs a kick </span>
                     </p>
-                    <h2 className="mt-8 text-4xl font-normal text-black sm:text-5xl lg:text-6xl xl:text-7xl">Industry a variety of high quality products</h2>
+                    <h2 className="mt-8 text-4xl font-normal text-black sm:text-5xl lg:text-6xl xl:text-7xl">SpacesWare is a variety of high quality products</h2>
 
                     <div className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
                         <div className="relative inline-flex items-center justify-center w-full sm:w-auto group">

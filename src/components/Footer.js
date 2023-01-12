@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p className='text-base font-semibold text-white'>Copyright © {year} - All right reserved by Manufacture.</p>
+                <p className='text-base font-semibold text-white'>Copyright © {year} - All right reserved by SpacesWare.</p>
             </div>
         </footer>
     );

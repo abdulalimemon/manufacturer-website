@@ -11,7 +11,7 @@ const BusinessSummery = () => {
             <div className="container px-5 py-10 lg:py-14 mx-auto">
                 <div className="flex flex-col text-center w-full mb-8 lg:mb-16">
                     <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl mb-4 lg:mb-8">Provide The Best Service For Sustainable Progress</h2>
-                    <p className="text-lg font-medium text-gray-600 px-4 md:px-8 lg:px-20">Gazolin Are A Industry & Manufacturing Services Provider Institutions. Suitable For Factory, Manufacturing, Industry, Engineering, Construction And Any Related Industry Care Field.</p>
+                    <p className="text-lg font-medium text-gray-600 px-4 md:px-8 lg:px-20">SpacesWare Are A Industry & Manufacturing Services Provider Institutions. Suitable For Factory, Manufacturing, Industry, Engineering, Construction And Any Related Industry Care Field.</p>
                 </div>
                 <div className="flex flex-wrap -m-4 text-center">
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
