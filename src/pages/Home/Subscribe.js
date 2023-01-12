@@ -12,7 +12,7 @@ const Subscribe = () => {
                 <form action="#" method="POST" className="max-w-xl mx-auto mt-12">
                     <div className="flex flex-col items-center sm:flex-row sm:justify-center">
                         <div className="flex-1 w-full min-w-0 px-4 sm:px-0">
-                            <label for="email" className="sr-only"></label>
+                            <label className="sr-only"></label>
                             <input
                                 type="email"
                                 name="email"
@@ -26,7 +26,7 @@ const Subscribe = () => {
                         <button type="submit" className="btn btn-primary ml-5 ">
                             Subscribe
                             <svg className="w-5 h-5 ml-3 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
                         </button>
                     </div>

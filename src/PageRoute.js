@@ -15,7 +15,7 @@ const PageRoute = () => {
         <>
             <Routes>
                 <Route path='/' element={<Home></Home>}></Route>
-                <Route path='/purchase' element={<RequireAuth>
+                <Route path='/purchase/:ToolsId' element={<RequireAuth>
                     <Purchase></Purchase>
                 </RequireAuth>}></Route>
                 <Route path='/dashboard' element={<RequireAuth>
