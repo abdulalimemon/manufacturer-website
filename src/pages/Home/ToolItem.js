@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Purchase from './Purchase';
+
 
 const ToolItem = ({ tool }) => {
-    // const [tools, setTools] = useState(null);
     const { _id, name, price, description, minimum_order_quantity, img, available_quantity } = tool;
     const navigate = useNavigate();
 
@@ -22,7 +21,7 @@ const ToolItem = ({ tool }) => {
                 <p className="mt-1 text-base font-medium">Available Quantity : {available_quantity}</p>
                 <p className="mt-1 text-base font-medium">Minimum Order Quantity : {minimum_order_quantity}</p>
             </div>
-            <button onClick={() => navigateToPurchasePage(tool._id)} className='btn btn-primary w-full text-white my-5'>Buy now</button>
+            <button onClick={() => navigateToPurchasePage(_id)} className='btn btn-primary w-full text-white my-5'>Buy now</button>
 
            
         </div>

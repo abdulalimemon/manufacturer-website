@@ -13,6 +13,7 @@ import Login from './pages/Login/Login';
 import Register from './pages/Login/Register';
 import RequireAuth from './pages/Login/RequireAuth';
 import Purchase from './pages/Home/Purchase';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 const PageRoute = () => {
     return (
@@ -31,6 +32,7 @@ const PageRoute = () => {
                     <Route path='add-review' element={<AddAReview></AddAReview>}></Route>
                 </Route>
                 <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+                <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
                 <Route path='/login' element={<Login></Login>}></Route>
                 <Route path='/forgotpassword' element={<ForgotPassword></ForgotPassword>}></Route>
                 <Route path='/register' element={<Register></Register>}></Route>

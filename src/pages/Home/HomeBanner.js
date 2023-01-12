@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import banner from '../../assets/banner.jpg'
 
 const HomeBanner = () => {
     return (
@@ -27,7 +28,7 @@ const HomeBanner = () => {
                         <img className="object-cover w-full h-full opacity-50" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png" alt="" />
                     </div>
 
-                    <img className="relative w-full max-w-5xl mx-auto" src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/4/dashboard-mockup.png" alt="" />
+                    <img className="relative w-full max-w-5xl mx-auto" src={banner} alt="banner" />
                 </div>
             </div>
         </section>
