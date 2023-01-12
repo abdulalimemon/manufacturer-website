@@ -21,16 +21,21 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><NavLink to='/' className='text-lg font-semibold text-center mb-1'>Home</NavLink></li>
-                            <li><NavLink to='/login' className='text-lg font-semibold text-center mb-1'>Login</NavLink></li>
+                            <li><NavLink to='/blogs' className='text-lg font-semibold text-center mb-1'>Blogs</NavLink></li>
+                            {
+                                user ? <li><Link onClick={() => { UserSignOut() }} className='text-lg font-semibold text-center mb-1'>Sign Out</Link></li>
+                                    : <li><NavLink to='/login' className='text-lg font-semibold text-center mb-1'>Login</NavLink></li>
+                            }
                         </ul>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><NavLink to='/' className='text-md font-bold mr-2 text-white'>Home</NavLink></li>
+                        <li><NavLink to='/blogs' className='text-md font-bold mr-2 text-white'>Blogs</NavLink></li>
                         {
                             user ? <li><Link onClick={() => { UserSignOut() }} className='text-md font-bold mr-2 text-white'>Sign Out</Link></li>
-                            : <li><NavLink to='/login' className='text-md font-bold mr-2 text-white'>Login</NavLink></li>
+                                : <li><NavLink to='/login' className='text-md font-bold mr-2 text-white'>Login</NavLink></li>
                         }
                     </ul>
                 </div>
