@@ -1,2 +1,15 @@
-# Getting Started with Manufacturer Website
+
+# SpaceWare Manufacturing web app
+
+## 🔗 Visit website [Link](https://emon-01.web.app/)
+
+A brief description of what this project does and who it's for
+
+## Tech Stack
+
+**Client:** React,  TailwindCSS, Daisy UI, Firebase
+
+**Server:** Node, Express
+
+
 
