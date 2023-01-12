@@ -2,7 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound';
 import Blogs from './pages/Blogs/Blogs';
+import AddAReview from './pages/Dashboard/AddAReview';
 import Dashboard from './pages/Dashboard/Dashboard';
+import DashboardHome from './pages/Dashboard/DashboardHome';
+import MyOrders from './pages/Dashboard/MyOrders';
+import MyProfile from './pages/Dashboard/MyProfile';
 import Home from './pages/Home/Home';
 import ForgotPassword from './pages/Login/ForgotPassword';
 import Login from './pages/Login/Login';
@@ -20,7 +24,12 @@ const PageRoute = () => {
                 </RequireAuth>}></Route>
                 <Route path='/dashboard' element={<RequireAuth>
                     <Dashboard></Dashboard>
-                </RequireAuth>}></Route>
+                </RequireAuth>}>
+                    <Route index element={<DashboardHome></DashboardHome>}></Route>
+                    <Route path='my-orders' element={<MyOrders></MyOrders>}></Route>
+                    <Route path='my-profile' element={<MyProfile></MyProfile>}></Route>
+                    <Route path='add-review' element={<AddAReview></AddAReview>}></Route>
+                </Route>
                 <Route path='/blogs' element={<Blogs></Blogs>}></Route>
                 <Route path='/login' element={<Login></Login>}></Route>
                 <Route path='/forgotpassword' element={<ForgotPassword></ForgotPassword>}></Route>
