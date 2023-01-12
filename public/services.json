@@ -1,0 +1,29 @@
+[
+    {
+        "_id": 1,
+        "name": "ENGINE DIAGNOSTIC",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "minimum_order_quantity": "10",
+        "available_quantity": "100",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "WHEEL ALIGNMENT",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "minimum_order_quantity": "10",
+        "available_quantity": "100",
+        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+    },
+    {
+        "_id": 3,
+        "name": "OIL CHANGING",
+        "price": "150",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "minimum_order_quantity": "10",
+        "available_quantity": "100",
+        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+    }
+]

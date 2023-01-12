@@ -3,7 +3,6 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { FcGoogle } from "react-icons/fc";
-import Loading from '../../components/Loading/Loading';
 
 
 

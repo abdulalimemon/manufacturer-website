@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { FcGoogle } from "react-icons/fc";
 import { FaUserAlt } from "react-icons/fa";
 import { BiAt } from "react-icons/bi";
 import { IoIosFingerPrint } from "react-icons/io";
