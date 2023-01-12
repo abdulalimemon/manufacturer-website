@@ -12,7 +12,7 @@ import ForgotPassword from './pages/Login/ForgotPassword';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Register';
 import RequireAuth from './pages/Login/RequireAuth';
-import Purchase from './pages/Purchase/Purchase';
+import Purchase from './pages/Home/Purchase';
 
 const PageRoute = () => {
     return (
