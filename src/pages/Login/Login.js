@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { FcGoogle } from "react-icons/fc";
 import { BiAt } from "react-icons/bi";
 import { IoIosFingerPrint } from "react-icons/io";
 import { useForm } from 'react-hook-form';
@@ -8,6 +7,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { toast } from 'react-toastify';
 import Loading from '../../components/Loading/Loading';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -124,13 +124,7 @@ const Login = () => {
                         <Link to='/forgotpassword' className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Forgot Password</Link>
                     </div>
                     <div className="divider">OR</div>
-                    <div className="mt-3 space-y-3">
-                        <button
-                            className="flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none">
-                            <FcGoogle className='w-6 h-6 mr-3'></FcGoogle>
-                            Log in with Google
-                        </button>
-                    </div>
+                    <SocialLogin title='Log in with Google'></SocialLogin>
                 </div>
             </div>
         </section>

@@ -9,6 +9,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../firebase.init';
 import { toast } from 'react-toastify';
 import Loading from '../../components/Loading/Loading';
+import SocialLogin from './SocialLogin';
 
 const Register = () => {
     const [
@@ -193,13 +194,7 @@ const Register = () => {
                         <p className="mt-2 text-base text-gray-600">Already have an account? <Link to='/login' className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Login</Link></p>
                     </div>
                     <div className="divider">OR</div>
-                    <div className="mt-3 space-y-3">
-                        <button
-                            className="flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none">
-                            <FcGoogle className='w-6 h-6 mr-3'></FcGoogle>
-                            Sign up with Google
-                        </button>
-                    </div>
+                    <SocialLogin title="Sign in with Google"></SocialLogin>
                 </div>
             </div>
 
