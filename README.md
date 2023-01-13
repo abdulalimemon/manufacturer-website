@@ -11,5 +11,21 @@ A brief description of what this project does and who it's for
 
 **Server:** Node, Express
 
+## Feature
 
+- Email Authentication.
+- Google Authentication.
+- Reset Password Option.
+- User Verification Option.
+- Make Order
+
+## Pages
+
+- Home Page
+- Blog Page
+- Purchase Page
+- Login Page
+- Registration Page
+- 404 page
+- Forgot Password page
 
