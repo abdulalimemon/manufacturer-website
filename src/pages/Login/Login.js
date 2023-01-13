@@ -22,7 +22,6 @@ const Login = () => {
     }
 
     if (user) {
-        console.log(user);
         navigate(from, { replace: true });
     }
 

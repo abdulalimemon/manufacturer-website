@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
     return (
@@ -30,19 +29,19 @@ const Portfolio = () => {
                         <div className="card w-80 bg-base-100 shadow-xl">
                             <div className="card-body text-center">
                                 <h2 className="font-medium text-lg text-center">React Shop</h2>
-                                <Link className='btn btn-primary' to='https://emon-1.netlify.app/'>Visit</Link>
+                                <a className='btn btn-primary' href='https://emon-1.netlify.app/'>Visit</a>
                             </div>
                         </div>
                         <div className="card w-80 bg-base-100 shadow-xl">
                             <div className="card-body text-center">
                                 <h2 className="font-medium text-lg text-center">WareHouse Project</h2>
-                                <Link className='btn btn-primary' to='https://warehouse-0.web.app/'>Visit</Link>
+                                <a className='btn btn-primary' href='https://warehouse-0.web.app/'>Visit</a>
                             </div>
                         </div>
                         <div className="card w-80 bg-base-100 shadow-xl">
                             <div className="card-body text-center">
                                 <h2 className="font-medium text-lg text-center">Your Doctor App</h2>
-                                <Link className='btn btn-primary' to='https://ur-dr1.web.app/'>Visit</Link>
+                                <a className='btn btn-primary' href='https://ur-dr1.web.app/'>Visit</a>
                             </div>
                         </div>
                     </div>
