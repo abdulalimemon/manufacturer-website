@@ -28,7 +28,7 @@ const Review = () => {
 
                         <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
                         {
-                                    reviews.slice(0, 3).reverse().map(review => <ReviewsItem review={review} key={review._id}></ReviewsItem>)
+                                    reviews.map(review => <ReviewsItem review={review} key={review._id}></ReviewsItem>).reverse().slice(0,3)
                                 }
                         </div>
                     </div>
