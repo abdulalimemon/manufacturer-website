@@ -10,7 +10,7 @@ const MyProfile = () => {
     const [updateProfile, setUpdateProfile] = useState([]);
 
     useEffect(() => {
-        fetch(`https://manufacturer-server-67n7.onrender.com/profile`)
+        fetch(`https://manufacturer-server-67n7.onrender.com/profile/${user.email}`)
             .then(res => res.json())
             .then(data => setUpdateProfile(data));
     }, []);
