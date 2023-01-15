@@ -9,7 +9,7 @@ const AddAReview = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = async (data) => {
-        fetch(`http://localhost:5000/reviews`, {
+        fetch(`https://manufacturer-server-67n7.onrender.com/reviews`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -24,10 +24,10 @@ const AddAReview = () => {
             })
     };
 
-    
+
     return (
         <section className="container mx-auto">
-            <div className="w-full md:w-7/12 lg:w-8/12 xl:w-5/12 mx-auto">
+            <div className="w-full md:w-7/12 lg:w-8/12 xl:w-7/12 mx-auto">
                 <div className="px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
                     <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl text-center">Add a review</h2>
                     <form onSubmit={handleSubmit(onSubmit)} className="mt-8">
@@ -39,7 +39,7 @@ const AddAReview = () => {
                                         <FaUserAlt className='w-5 h-5'></FaUserAlt>
                                     </div>
                                     <input
-                                        id="name" type="text" 
+                                        id="name" type="text"
                                         placeholder="Enter your name"
                                         className="block w-full py-4 pl-10 pr-4 text-black font-semibold placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
                                         aria-invalid={errors.name ? "true" : "false"}

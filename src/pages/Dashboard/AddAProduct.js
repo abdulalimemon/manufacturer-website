@@ -11,7 +11,7 @@ const AddAProduct = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = async (data) => {
-        fetch(`http://localhost:5000/tools`, {
+        fetch(`https://manufacturer-server-67n7.onrender.com/tools`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -29,7 +29,7 @@ const AddAProduct = () => {
 
     return (
         <section className="container mx-auto">
-            <div className="w-full md:w-7/12 lg:w-8/12 xl:w-5/12 mx-auto">
+            <div className="w-full md:w-7/12 lg:w-8/12 xl:w-7/12 mx-auto">
                 <div className="px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
                     <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl text-center">Add a new Tool</h2>
                     <form onSubmit={handleSubmit(onSubmit)} className="mt-8">
