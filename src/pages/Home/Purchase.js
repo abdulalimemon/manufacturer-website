@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiFillStar } from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
 import { useParams } from 'react-router-dom';
 import useToolsItem from '../../components/hooks/useToolsItem';
 
@@ -7,8 +9,18 @@ import useToolsItem from '../../components/hooks/useToolsItem';
 const Purchase = () => {
     const { ToolsId } = useParams();
     const [toolsItem] = useToolsItem(ToolsId);
+    const [orderQuantity, setOrderQuantity] = useState(10);
 
     const { name, price, description, minimum_order_quantity, img, available_quantity } = toolsItem;
+
+    const  decrease = () => {
+        orderQuantity > 10 ? setOrderQuantity(orderQuantity - 10) : setOrderQuantity(10);
+    }
+
+    const increase = () => {
+        orderQuantity < available_quantity ? setOrderQuantity(orderQuantity + 10) : setOrderQuantity(available_quantity);
+    }
+    
     return (
         <>
             <section className="text-gray-600 body-font overflow-hidden">
@@ -36,25 +48,22 @@ const Purchase = () => {
                                 </div>
                                 <div className="flex ml-6 items-center">
                                     <span className="mr-3">Select Quantity</span>
-                                    <div className="relative">
-                                        <select className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
-                                            <option>10</option>
-                                            <option>20</option>
-                                            <option>30</option>
-                                            <option>40</option>
-                                            <option>50</option>
-                                            <option>100</option>
-                                        </select>
-                                        <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
-                                                <path d="M6 9l6 6 6-6"></path>
-                                            </svg>
-                                        </span>
+                                    <div className="form-control">
+                                        <div className="input-group">
+                                            <button onClick={()=> decrease()} className="btn btn-square">
+                                                <AiOutlineMinus></AiOutlineMinus>
+                                            </button>
+                                            
+                                            <div className="input-bordered px-5 py-3 border">{orderQuantity}</div>
+                                            <button onClick={()=> increase()} className="btn btn-square">
+                                                <AiOutlinePlus></AiOutlinePlus>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex items-center justify-between">
-                                <span className="title-font font-medium text-2xl text-gray-900">Price: ${price}</span>
+                                <span className="title-font font-medium text-2xl text-gray-900">Price: ${price * orderQuantity}</span>
                                 <button className="btn btn-primary px-10">Buy Now</button>
 
                             </div>
