@@ -15,6 +15,7 @@ import RequireAuth from './pages/Login/RequireAuth';
 import Purchase from './pages/Home/Purchase';
 import Portfolio from './pages/Portfolio/Portfolio';
 import AllReview from './pages/AllReview/AllReview';
+import AddAProduct from './pages/Dashboard/AddAProduct';
 
 const PageRoute = () => {
     return (
@@ -31,6 +32,7 @@ const PageRoute = () => {
                     <Route path='my-orders' element={<MyOrders></MyOrders>}></Route>
                     <Route path='my-profile' element={<MyProfile></MyProfile>}></Route>
                     <Route path='add-review' element={<AddAReview></AddAReview>}></Route>
+                    <Route path='add-tool' element={<AddAProduct></AddAProduct>}></Route>
                 </Route>
                 <Route path='/blogs' element={<Blogs></Blogs>}></Route>
                 <Route path='/all-review' element={<AllReview></AllReview>}></Route>

@@ -52,7 +52,7 @@ const ReviewsItem = ({ review }) => {
                 </div>
 
                 <div className="flex items-center mt-8">
-                    <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src={img || user.photoURL} alt={name} />
+                    <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src={img || user?.photoURL} alt={name} />
                     <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 ">{name}</p>
                         <p className="mt-0.5 text-sm  text-gray-600">{job}</p>
