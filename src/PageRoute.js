@@ -14,6 +14,7 @@ import Register from './pages/Login/Register';
 import RequireAuth from './pages/Login/RequireAuth';
 import Purchase from './pages/Home/Purchase';
 import Portfolio from './pages/Portfolio/Portfolio';
+import AllReview from './pages/AllReview/AllReview';
 
 const PageRoute = () => {
     return (
@@ -32,6 +33,7 @@ const PageRoute = () => {
                     <Route path='add-review' element={<AddAReview></AddAReview>}></Route>
                 </Route>
                 <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+                <Route path='/all-review' element={<AllReview></AllReview>}></Route>
                 <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
                 <Route path='/login' element={<Login></Login>}></Route>
                 <Route path='/forgotpassword' element={<ForgotPassword></ForgotPassword>}></Route>
