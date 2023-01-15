@@ -13,7 +13,7 @@ const ToolItem = ({ tool }) => {
 
     return (
         <div className="p-1 lg:px-5 w-full">
-            <img alt={name} className="object-cover object-center w-full block" src={img} />
+            <img alt={name} className="object-cover object-center w-9/12 block mx-auto" src={img} />
             <div className="mt-4 text-center px-0 lg:px-7">
                 <h2 className="text-gray-900 text-xl font-medium">{name}</h2>
                 <p className="mt-1 text-base font-medium">{description}</p>

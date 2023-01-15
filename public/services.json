@@ -1,29 +1,23 @@
 [
     {
-        "_id": 1,
-        "name": "ENGINE DIAGNOSTIC",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "minimum_order_quantity": "10",
-        "available_quantity": "100",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "name": "Leslie Alexander",
+        "job": "Freelance React Developer",
+        "rating": "5",
+        "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+        "img": "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png"
     },
     {
-        "_id": 2,
-        "name": "WHEEL ALIGNMENT",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "minimum_order_quantity": "10",
-        "available_quantity": "100",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "name": "Jacob Jones",
+        "job": "Digital Marketer",
+        "rating": "5",
+        "description": "Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.",
+        "img": "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
     },
     {
-        "_id": 3,
-        "name": "OIL CHANGING",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "minimum_order_quantity": "10",
-        "available_quantity": "100",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
-    }
+        "name": "Jenny Wilson",
+        "job": "Graphic Designer",
+        "rating": "5",
+        "description": "I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.",
+        "img": "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png"
+    }  
 ]
